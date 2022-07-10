@@ -17,11 +17,15 @@ section{
     border: 3px solid #159DD2;
     padding: 1rem 2rem;   
     align-items: center;
-    width: 50%;
+    width: max-content;
     position: absolute;
-    left: 70px;
-    top: -130px;
-   
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+}
+
+.liRelative{
+    position: relative;
 }
 
 .dropup_menu2 {
@@ -30,11 +34,47 @@ section{
     border: 3px solid red;
     padding: 1rem 2rem;   
     align-items: center;
-    width: 50%;
+    width: max-content;
     position: absolute;
-    left: 300px;
-    top: -130px;
-   
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+}
+.dropup_menu3 {
+    justify-content: space-between;
+    background-color: white;
+    border: 3px solid green;
+    padding: 1rem 2rem;   
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+}
+.dropup_menu4 {
+    justify-content: space-between;
+    background-color: white;
+    border: 3px solid yellow;
+    padding: 1rem 2rem;   
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+}
+.dropup_menu5 {
+    justify-content: space-between;
+    background-color: white;
+    border: 3px solid purple;
+    padding: 1rem 2rem;   
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
 }
 
 .display-none {
@@ -44,7 +84,6 @@ section{
 .dropup_link {
     margin-top: 10em;
     width: 100%;
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
@@ -58,7 +97,7 @@ ul{
 }
 
 #navbar{
-    width: 100%;
+    width: 60%;
     position: absolute;
     bottom: 2em;
     left: 50%;
