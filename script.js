@@ -62,13 +62,14 @@
 
 
 
+
+
 const sectionClickable = document.querySelector('#sectionTest');
 const linkClickables = document.querySelectorAll('a');
 const liRelatives = document.querySelectorAll('ul');
 
 sectionClickable.addEventListener('click', function(e) {
     if (e.target.classList.contains('clickable')) {
-        
     }else {
         for (i=0 ; i<liRelatives.length ; i++) {    
             if (liRelatives[i].id != ""){
@@ -84,6 +85,7 @@ linkClickables.forEach(link => {
         for (i=0 ; i<liRelatives.length ; i++) {    
             if (liRelatives[i].id != ""){
                 liRelatives[i].classList.add('display-none');
+                link.parentElement.parentElement.classList.remove('display-none');
             }
         }
         link.nextElementSibling.classList.remove('display-none');
